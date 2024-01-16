@@ -5,17 +5,33 @@
 @tailwind utilities;
 
 @layer utilities {
-  .section_title {
-    @apply text-4xl font-medium text-center mb-10;
-  }
+	.section_title {
+		@apply text-4xl font-medium text-center mb-10;
+	}
 
-  .btn {
-    @apply bg-cyan text-light w-32 h-12 rounded-xl hover:bg-cyan/80 transition duration-300 ease-in-out font-medium flex items-center justify-center text-center;
-  }
-  .nav_menu {
-    @apply hover:text-rose-600 transition-transform duration-300 ease-in-out;
-  }
-  .image {
-    @apply w-full h-full overflow-hidden;
-  }
+	.btn {
+		@apply bg-cyan text-light w-32 h-12 rounded-xl hover:bg-cyan/80 transition duration-300 ease-in-out font-medium flex items-center justify-center text-center;
+	}
+	.nav_menu {
+		@apply hover:text-rose-600 transition-transform duration-300 ease-in-out;
+	}
+
+	.hero_sliders {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		background-color: aqua;
+	}
+	.swiper {
+		width: 90%;
+		height: 100vh;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	.swiper-slide img {
+		width: 100%;
+	}
 }
